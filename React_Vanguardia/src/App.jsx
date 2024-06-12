@@ -1,16 +1,26 @@
+// src/App.jsx
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import Inventario from './Inventario';
+import Navbar from './Navbar';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>React con Vite</h1>
-        <p>
-          Prueba de la creacion de react .
-        </p>
-        <button className="primary-button">Comenzar</button>
-      </header>
+      <Navbar />
+      <main className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/inventario" element={<Inventario />} />
+        </Routes>
+      </main>
+      <footer>
+        <p>&copy; 2024 Mi Aplicación</p>
+      </footer>
     </div>
   );
 }

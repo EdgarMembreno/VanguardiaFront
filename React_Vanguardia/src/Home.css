@@ -1,0 +1,19 @@
+/* src/Home.css */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 160px); /* Altura mínima para centrar el contenido */
+  }
+  
+  .home h2 {
+    font-size: 3rem;
+  }
+  
+  .home p {
+    font-size: 1.5rem;
+  }
+  
